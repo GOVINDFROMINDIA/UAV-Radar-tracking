@@ -12,7 +12,12 @@ while True:
     jets = jet_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5)
 
     for (x, y, w, h) in jets:
-        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
+        target_size = min(w, h) // 2
+        target_x = x + w // 2
+        target_y = y + h // 2
+        cv2.drawMarker(frame, (target_x, target_y), (0, 0, 255),
+                       cv2.MARKER_CROSS, markerSize=target_size,
+                       thickness=2)
         speed_box_width = 50
         speed_box_height = 20
         speed_box_x = x
