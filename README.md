@@ -7,3 +7,6 @@ opencv project to track aerial object
 - The code is implemented using basic OpenCV library
 - Here we deploy [JET CLASSIFIER XML file](https://github.com/GOVINDFROMINDIA/UAV-tracking/blob/main/jet.xml), a predefinde Haar Cascade Classifier that recognises aircrafts.
 - Defined a prototype space to define speed of the aircraft.
+
+
+https://user-images.githubusercontent.com/79012314/223371040-5d94ee6a-3533-4598-a048-c395780ac17d.mp4
